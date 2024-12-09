@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materiais e Métodos - Projeto Biomaker</title>
+  <link rel="stylesheet" href="css/navbarFooter.css">     
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dedfe0;
+    }
+
+    /* Sombra no container */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    .image-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .image-group img {
+      width: 48%;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar li {
+        margin: 5px 0;
+      }
+
+      .image-group {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-group img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="brand">Projeto Biomaker</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introducao.html">Introdução</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="materiais.html">Materiais e Métodos</a></li>
+        <li><a href="resultados.html">Resultados</a></li>
+        <li><a href="conclusao.html">Conclusão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <section>
+      <h2 style="text-align: center;">Materiais e Métodos</h2>
+      <p>Os materiais utilizados no Projeto Biomaker incluíram:</p>
+      <ul>
+        <li>Softwares de modelagem 3D: Fusion 360 e Cura.</li>
+        <li>Filamento PLA para impressão.</li>
+        <li>Impressoras 3D.</li>
+      </ul>
+      <div class="image-group">
+        <img src="https://studiocad3d.com/wp-content/uploads/2018/07/unnamed-1.png" alt="Imagem do Fusion 360" />
+        <img src="https://img.utdstc.com/icon/97a/a5e/97aa5e531fee9e0b18d7028609d091062db6e392c49e45859ba0aeeeb118eae4:200" alt="Imagem do Cura" />
+      </div>
+      <p>
+        O processo envolveu minicursos, videoaulas e o uso de softwares para
+        modelagem. Os arquivos foram fatiados no Cura e impressos, garantindo
+        precisão nos detalhes.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Projeto Biomaker. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

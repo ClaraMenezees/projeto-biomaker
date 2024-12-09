@@ -1,0 +1,158 @@
+/* Estilo do Body */
+body {
+  margin: 0;
+  font-family: 'Lora', serif; /* Fonte com aparência mais sofisticada */
+  background-color: #f4f4f9; /* Cor de fundo clara e elegante */
+  line-height: 1.6; /* Melhor espaçamento entre linhas */
+  color: #333; /* Cor do texto */
+  display: flex;
+  flex-direction: column; /* Torna o corpo da página um contêiner flex */
+  min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
+}
+
+/* Container Principal */
+.container {
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #284703;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Mantém a navbar sempre visível ao rolar */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #cddc39; /* Cor de destaque */
+}
+
+.navbar .brand {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+background-color: #284703;
+color: white;
+text-align: center;
+padding: 20px 0;
+font-size: 1em;
+border-top: 5px solid #cddc39; /* Linha de destaque no topo do rodapé */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: auto; /* Garante que o rodapé seja empurrado para o final */
+}
+
+footer p {
+margin: 0;
+font-family: 'Roboto', sans-serif;
+font-size: 1.1em;
+letter-spacing: 1px;
+text-align: center;
+}
+
+/* Links */
+a {
+  color: #284703;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #cddc39;
+  text-decoration: underline;
+}
+
+/* Botões */
+button {
+  background-color: #284703;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #cddc39;
+  color: #284703;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar li {
+      margin: 5px 0;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+
+  p {
+      font-size: 1em;
+  }
+}

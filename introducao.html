@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introdução - Projeto Biomaker</title>
+  <link rel="stylesheet" href="css/navbarFooter.css">     
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dedfe0;
+    }
+
+    /* Conteúdo principal */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px auto;
+      border-radius: 8px;
+    }
+
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar li {
+        margin: 5px 0;
+      }
+
+      .container {
+        margin: 20px auto;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="brand">Projeto Biomaker</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introducao.html">Introdução</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="resultados.html">Resultados</a></li>
+        <li><a href="conclusao.html">Conclusão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <section>
+      <img src="img/imagem1.jpg" alt="Imagem de introdução do projeto" />
+      <h2 style="text-align: center;">Introdução</h2>
+      <p class="text-justify">
+        A integração entre tecnologia e biologia oferece novas oportunidades para o entendimento e visualização de estruturas biológicas complexas. Este projeto explorou essa interseção através da modelagem e impressão tridimensional de três tipos de agentes patogênicos: bacteriófagos, vírus envelopados e bactérias encapsuladas.
+      </p>
+      <p class="text-justify">
+        A modelagem 3D permitiu a criação de representações detalhadas dessas estruturas, fornecendo uma compreensão mais profunda de suas características e importância na microbiologia.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Projeto Biomaker. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
